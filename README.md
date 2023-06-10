@@ -62,8 +62,8 @@ If I had more time, I would add a popup for the video. I wanted to implement a f
 For my project demo, I wish I were more prepared, I did not realize how it would be like until I did it. 
 ### Open-source libraries used
 
-- Add any links to open-source libraries used in your project.
-
+[- Add any links to open-source libraries used in your project.
+](https://www.w3schools.com/)
 ### Shout out
 
 I want to give a shoutout to all the TA and Sophia for helping me with this project. 
