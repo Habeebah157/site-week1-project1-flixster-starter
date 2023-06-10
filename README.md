@@ -40,12 +40,11 @@ Deployed Application (optional): [Flixster Deployed Site](https://habeebah157.gi
 - [ ] Allow movie video trailers to be played using [embedded YouTube](https://support.google.com/youtube/answer/171780?hl=en)
 - [x] Implement anything else that you can get done to improve the app functionality!
 
-### Walkthrough Video
-
-
-<a href="https://www.loom.com/share/95a3a5c3f2fa4045ba30217ad3381b7a">
-    <img style="max-width:300px;" src="null">
+<a href="https://www.loom.com/share/b716b5fe2e5e4c8fa009a556d189c5c1">
+    <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/b716b5fe2e5e4c8fa009a556d189c5c1-with-play.gif">
   </a>
+
+### Walkthrough Video
 
 
 ### Reflection
