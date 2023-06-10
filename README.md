@@ -42,7 +42,8 @@ Deployed Application (optional): [Flixster Deployed Site](https://habeebah157.gi
 
 ### Walkthrough Video
 
-<img src="http://g.recordit.co/F3iMO0h3Yk.gif" width=200><br>
+<img src="http://g.recordit.co/F3iMO0h3Yk.gif">
+<img src="http://g.recordit.co/HUqfRkPQUK.gif" width=200><br>
 
 
 ### Reflection
