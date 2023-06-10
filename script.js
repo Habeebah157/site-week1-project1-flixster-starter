@@ -5,7 +5,7 @@ const BASE_URL = "https://api.themoviedb.org/3"
 let pagenum = 1
 //page number change number
 
-
+//variables
 const form = document.getElementById('form')
 const search = document.getElementById('search-input')
 const searchUrl = BASE_URL + '/search/movie?'+API_KEY
@@ -15,7 +15,7 @@ const openModal = document.querySelector('open_overview')
 const closeModal = document.querySelector('close_overview')
 const modal = document.querySelector('.modal')
 
-
+//updates the url based on page number
 function updateURL(pagenum){
     let API_URL = BASE_URL + '/discover/movie?sort_by=popularity.desc&page='+pagenum+'&' + API_KEY
     return API_URL
@@ -25,6 +25,8 @@ API_URL = updateURL(1)
 
 receiveMovie(API_URL)
 
+//calls the api
+
 function receiveMovie(url){
 
     fetch(url).then(response => response.json()).then((data) => {
@@ -32,12 +34,14 @@ function receiveMovie(url){
     })
     
 }
+
+//clears display so div would be empty
 function clearDisplay(){
     const sub = document.querySelector(".movies-grid")
     sub.innerHTML=""
 }
 
-
+//displays the movie by using a forloop to go through json
 function displayMovie(data){
 
     data.forEach(movie => {
@@ -47,17 +51,18 @@ function displayMovie(data){
         movieEl.setAttribute("class","movie-card")
         //create a new html file. 
         movieEl.innerHTML += `
-                            <img class="movie-poster" src="https://image.tmdb.org/t/p/original/${poster_path}">
+                            <img alt="${original_title}" class="movie-poster" src="https://image.tmdb.org/t/p/original/${poster_path}">
                             <div class="movie-info">
                                 <p class="vote_average">✨${vote_count}</p>
                                 <p class="movie-title">${original_title}</p>
                                 
                             </div>
-                            <button class="open_overview">Overview</button><br>
+                            
                             <dialogclass="modal" id="modal">
+                                <h3>Overview</h3>
                                 
                                 ${overview}
-                                <br><button class="close_overview">Close</button>
+                               
                             </dialog>
                             
                             
@@ -86,7 +91,7 @@ form.addEventListener('submit', (e) => {
     }
 })
  
-
+//clear the input and return to original
 clear.addEventListener('click', (e) => {
     clearDisplay()
     pagenum = 1
@@ -95,7 +100,7 @@ clear.addEventListener('click', (e) => {
     search.value = ""
 })
 
-
+//when add more is pressed, add more movies
 add_more.addEventListener('click', (e) =>{
     pagenum++
     console.log(pagenum)
@@ -104,19 +109,5 @@ add_more.addEventListener('click', (e) =>{
     receiveMovie(API_URL)
 })
 
-function show(){
-    var popup = document.querySelector(".popup")
-    popup.classList.toggle("active");
-}
 
-openModal.addEventListener('click', () => {
-    modal.show();
-})
 
-//// <div>
-//     <button onclick="show();">Watch Trailer</button>
-// </div>
-// <div class="popup">
-                            
-//     <iframe controls="true" src="https://www.youtube.com/embed/c-ptvXgUfdg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                            // </div>

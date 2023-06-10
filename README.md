@@ -6,7 +6,7 @@ Submitted by: **Habeebah Muse**
 
 Estimated time spent: **10** hours spent in total
 
-Deployed Application (optional): [Flixster Deployed Site](ADD_LINK_HERE)
+Deployed Application (optional): [Flixster Deployed Site](https://habeebah157.github.io/site-week1-project1-flixster-starter/)
 
 ### Application Features
 
@@ -34,7 +34,7 @@ Deployed Application (optional): [Flixster Deployed Site](ADD_LINK_HERE)
 
 #### Stretch Features
 
-- [ ] Deploy website using GitHub Pages.
+- [x] Deploy website using GitHub Pages.
 - [ ] Allow user to view more details about a movie within a popup.
 - [x] Improve the user experience through CSS & animation.
 - [ ] Allow movie video trailers to be played using [embedded YouTube](https://support.google.com/youtube/answer/171780?hl=en)
@@ -42,9 +42,9 @@ Deployed Application (optional): [Flixster Deployed Site](ADD_LINK_HERE)
 
 ### Walkthrough Video
 
-`TODO://` Add the embedded URL code to your animated app walkthrough below, `ADD_EMBEDDED_CODE_HERE`. Make sure the video or gif actually renders and animates when viewing this README. (🚫 Remove this paragraph after adding walkthrough video)
 
-`ADD_EMBEDDED_CODE_HERE`
+
+`http://g.recordit.co/F3iMO0h3Yk.gif`
 
 ### Reflection
 
